@@ -1,0 +1,158 @@
+.button1, .button2 {
+    
+    /* 생략 */
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    background-color: #556B2F;
+    color: black;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: center;
+    display: inline-block;
+    width: auto;
+    
+  
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+    cursor: pointer;
+
+    transition: 0.5s;
+  }
+    
+  .button1:active,
+  .button1:hover,
+  .button1:focus,
+    .button2:active,
+    .button2:hover,
+    .button2:focus {
+  background: var(--button-hover-bg-color);
+  font:var(--button-hover-font-color);
+  font-weight: 700;
+  outline: 0;
+}
+.button1:disabled,
+.button2:disabled {
+  opacity: 0.5;
+  font-weight: 700;
+}
+.grader{
+  margin: 0 auto;
+    padding: 0.5rem 1rem;
+    background-color: #556B2F;
+    color: black;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: center;
+    display: inline-block;
+    width: auto;
+    
+  
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+.grader:active,
+.grader:hover,
+.grader:focus
+    {
+  background: var(--button-hover-bg-color);
+  font:var(--button-hover-font-color);
+  font-weight: 700;
+  outline: 0;
+}
+.grader:disabled {
+  opacity: 0.5;
+  font-weight: 700;
+}
+.grade{
+    width: 140px;
+}
+
+.start{
+    width: 400px;
+    height: 800px;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;  
+    text-align: center; 
+    
+}   
+.start11{
+  width: 164px;
+  height: 300px;
+  align-items: center;
+  margin: auto;
+  border-radius: 10px;  
+  text-align: center; 
+  background: url('https://postfiles.pstatic.net/MjAyMjA2MjlfMjA3/MDAxNjU2NTEwODY3NTMy.BO35Q-MH2CzxLIIzQ_vGpYBYBFiY8Iz8el99HDJEEuEg.whqFCZpflyp_emPpvHKLYkJVuwEOZbIvOlcTSs-Og3cg.PNG.oopsxxx/008.png?type=w966');
+  background-position: center;
+  background-repeat: no-repeat;
+}   
+.start-1{
+  width: 400px;
+  height: 800px;
+  align-items: center;
+  margin: auto;
+  justify-self: center;  
+  align-items: center;
+
+  
+}
+
+.start-11{
+  width: 164px;
+  height: 300px;
+  align-items: center;
+  margin: auto;
+  font-family: "Noto Sans KR", sans-serif;
+  border-radius: 10px;  
+  text-align: center; 
+  background: url('https://postfiles.pstatic.net/MjAyMjA2MjlfMjA3/MDAxNjU2NTEwODY3NTMy.BO35Q-MH2CzxLIIzQ_vGpYBYBFiY8Iz8el99HDJEEuEg.whqFCZpflyp_emPpvHKLYkJVuwEOZbIvOlcTSs-Og3cg.PNG.oopsxxx/008.png?type=w966');
+  background-position: center;
+  justify-self: center;  
+  background-repeat: no-repeat;
+}
+
+.thep1{
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+}
+.step1{
+  width: 164px;
+  height: 300px;
+  align-items: center;
+  margin: auto;
+  border-radius: 10px;  
+  text-align: center; 
+  background: url('https://postfiles.pstatic.net/MjAyMjA2MjlfMjA3/MDAxNjU2NTEwODY3NTMy.BO35Q-MH2CzxLIIzQ_vGpYBYBFiY8Iz8el99HDJEEuEg.whqFCZpflyp_emPpvHKLYkJVuwEOZbIvOlcTSs-Og3cg.PNG.oopsxxx/008.png?type=w966');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+p{
+  text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+@font-face {
+  font-family: 'NotoKrB';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(/fonts/NotoSans-Bold.eot);
+  src: url(/fonts/NotoSans-Bold.eot?#iefix) format('embedded-opentype'),
+  url(/fonts/NotoSans-Bold.woff2) format('woff2'),
+  url(/fonts/NotoSans-Bold.woff) format('woff');
+  }
+.grade, grader{
+  margin:0 auto;
+  
+}

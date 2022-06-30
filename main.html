@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <link rel = 'stylesheet' href = 'js.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <title>두근두근 미신시</title>
+</head>
+<body class="body1">
+    <!----- pys-onClick은 파이썬 함수 실행----->
+    <py-script src = '/execute.py'>
+    </py-script>
+    <div class = 'start' id = 'start'>
+        <div class = 'start11'>
+            
+        </div>
+        <button onclick="군인()" class="button1">의무군인(1년 6개월)</button><br></br>
+        <button onclick="get2()" class="button2">직업군인</button>
+    </div>
+    <div class = 'start-1' id = 'start-1'>
+        <div class = 'start-11'></div>
+        <p class="thep1">몇 급을 원하시나요?</p>
+        <p>1 ~ 3급: 현역입대</p>
+        <p>4급: 보충역(공익, 훈련받아야함)</p>
+        <p>5급: 전시근로역(전쟁시, 근로역)</p>
+        <p>6급: 병역문제</p>    
+        <p>7급: 재신검</p>
+        <input name = 'grde' type="number" placeholder = "숫자로 입력" min = '1' max="7" id = 'grade' class = 'grade'><br></br>
+        <button onclick="get1_1()" class="grader">다음</button>        
+    </div>
+    <div id = 'step1'>
+        <div class = 'step1'></div>
+        <p>키가 몇이신가요?</p>
+        <input type="number"  placeholder="cm단위로 입력" id = "height">
+        <p>몸무게가 몇인가요?</p>
+        <input type="number" placeholder="kg단위로 입력" id = "weight">
+        <button onclick="final()" pys-onClick="의무군인">다음</button>
+    </div>
+    <div id = 'final'>
+        <p>결과</p>
+        <h3 id="result"></h3>
+        
+    </div>
+    <script>
+        document.getElementById('step1').style.display='none';
+        document.getElementById('final').style.display='none';
+        document.getElementById('start-1').style.display='none';
+
+        function 군인(){
+            document.getElementById('start').style.display= 'none';
+            document.getElementById('start-1').style.display= 'block';
+        }
+        function get2(){
+            document.getElementById('start').style.display= 'none';
+            document.getElementById('step1').style.display= 'block';
+        }
+        
+        function get1_1(){
+            var f = document.getElementById('grade').value;
+            if(f == ''){
+                alert('원하시는 등급을 입력해주세요');
+                
+            }
+            else{
+                document.getElementById('start-1').style.display='none';
+                document.getElementById('step1').style.display='block';
+            }
+        }
+        function final(){
+            var hei = document.getElementById('height').value;
+            var wei = document.getElementById('weight').value;
+            if (hei == '' && wei ==''){
+                alert('키나 몸무게를 다시 입력해주세요')
+            }
+            else{
+            document.getElementById('step1').style.display='none';
+            document.getElementById('final').style.display='block';
+            }
+        }
+    </script>
+</body>
+</html>
